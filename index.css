@@ -4,6 +4,9 @@
 /* .hamburger{
   background-color: white !important;
 } */
+figure{
+    margin: 0;
+    }
 .logo img{
   width: 140px;
 }
@@ -13,15 +16,31 @@
   background-color: #000000;
   color: white;
 }
-.titulo{
+/* .titulo{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: white;
+} */
+/* .leyenda{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+  color: white;
+} */
+.letra{
+font-family: 'Open Sans', sans-serif;
+}
+.letra h1{
+font-family: 'Open Sans', sans-serif;
+margin-bottom: -10px;
+}
+.parrafo{
+  padding-top: -20px;
 }
 .leyenda{
   font-family: 'Open Sans', sans-serif;
   font-size: 4em;
   color: white;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 .leyenda2{
   font-family: 'Open Sans', sans-serif;
@@ -37,9 +56,7 @@
 .imagen{
   /* margin-left: -10px; */
 }
-.container h1{
-  margin-bottom: -20px !important;
-}
+
 
 .iconos{
   font-size: 30px;
@@ -47,10 +64,75 @@
   /* padding-left: -90px !important; */
 }
 .fondo{
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
-background: #1e5799; /* Old browsers */
-background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  position: relative;
+  background: #0f9bf6;
+  /* position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-row: auto;
 }
+.event{
+  /* margin: 1%; */
+  /* width: 48%; */
+  /* flex-shrink: 0; */
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  /* background-color: #f4fbff; */
+}
+.event-list{
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.event-list-title{
+  margin-left: 20px;
+}
+.contenedor{
+  /* border: 1px solid red; */
+  /* max-width: 1000px; */
+  /* flex: 1; */
+  /* margin: 0 auto; */
+  /* display: inherit; */
+  /* align-items:inherit; */
+  /* justify-content: inherit; */
+  /* height: inherit; */
+  /* flex-wrap: inherit; */
+  }
+
+.flexible-video{
+  /* width: 100%; */
+  /* height: 0; */
+  /* padding-top:56.25%; */
+  /* background: blue; */
+  /* position: relative; */
+  }
+  .youtube-video{
+    /* width: 100%; */
+    /* height: auto; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* height:100%; */
+  }
+  .event-details{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
+  .event-description{
+    /* text-align: left; */
+  }
+  .event-url{
+    /* color: #056fff; */
+    /* border: 1px solid; */
+    /* padding: 5px 20px; */
+    /* text-decoration: none; */
+    /* border-radius: 5px; */
+  }

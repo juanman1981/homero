@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Scada:700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Scada:700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <style media="screen">
     @font-face {
@@ -65,6 +66,56 @@
     .icon-social2:before {
       content: "\e902";
     }
+    .waves {
+      position: absolute;
+    /*      left: 0;
+      right: 0;
+      height: 200px;
+      bottom: 0;*/
+      bottom: -135px;
+      height: 527px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .wave {
+      position: absolute;
+      left: -180px;
+      bottom: 0;
+      /*width: 200px;*/
+      /*height: 200px;*/
+      /*width: 100%;*/
+      /*border-radius: 50%;*/
+      /*background:rgba(0,0,0, .3);*/
+      width: 2402px;
+      height: 427px;
+      background: url(waves.png) center bottom no-repeat;
+      animation: 5s wave ease-in-out infinite alternate;
+    }
+    .wave.a {
+      background-position: 0 -854px;
+    }
+    .wave.b {
+      background-position: 0 -427px;
+      animation-delay: .6s;
+    }
+    .wave.c {
+      background-position: 0 0;
+      animation-delay: 1.2s;
+    }
+    /*.container {
+      position: absolute;
+    }*/
+    @keyframes wave {
+      0% {
+        transform: translate(0 , 0);
+      }
+      50% {
+        transform: translate(-80px, 30px);
+      }
+      100% {
+        transform: translate(160px, -60px);
+      }
+    }
 
     </style>
     <title>cesarvinueza</title>
@@ -98,20 +149,30 @@
     </nav>
     <div class="container-fluid fondo">
       <div class="row leyenda">
+        <div class="waves">
+          <div class="wave circulo a"></div>
+          <div class="wave circulo b"></div>
+          <div class="wave circulo c"></div>
+        </div>
         <div class="col-8 offset-4 col-sm-9 offset-sm-3">Si lo puedes</div>
           <div class="col-7 offset-5">soñar</div>
             <div class="col-8 offset-4">lo puedes</div>
               <div class="col-7 offset-5">lograr!</div>
       </div>
+      <div class="waves">
+        <div class="wave circulo a"></div>
+        <div class="wave circulo b"></div>
+        <div class="wave circulo c"></div>
+      </div>
     </div>
     <section id="cesarvinueza" class="mt-1">
       <div class="container">
           <div class="row justify-content-md-center">
-            <div class="col col-md-9 col-lg-4 imagen">
+            <div class="col col-md-9 col-lg-4">
               <img src="assets/images/logocv.jpg" alt="Imagen" >
             </div>
-             <div class="col col-lg-8 text-lg-right pt-2">
-               <p><h1>CÈSAR VINUEZA</h1>
+             <div class="col col-lg-8 text-lg-right pt-2 letra">
+               <p class="parrafo"><h1>CÈSAR VINUEZA</h1>
                <br>Gerente Propietario de una Empresa de Servicios de Limpieza que en la actualidad cuenta con más de 70 empleados en nómina
                 y tiene un crecimiento en sus ventas del 40% anual gracias a las Campañas Digitales implementadas desde la creación de la
                 empresa.</br>
@@ -127,7 +188,7 @@
                 <span class="icon-instagram"></span>
                 <span class="icon-facebook"></span>
               </div>
-           </div>
+             </div>
         </div>
       </div>
     </section>
@@ -136,13 +197,88 @@
         <p class="text-white pl-5"></p>
           <div class="row">
             <div class="col-sm-12" style="background-color: #000000;">
-              <h3 class="text-white pl-5 pt-2">MIS ASESORìAS</h3>
+              <p class="text-white pl-5 pt-2 letra">"En la actualidad, las ventas por Internet se han convertido en la mejor oportunidad para que
+                Pymes y Emprendedores prosperen y salgan adelante. <br>Existen varias maneras de vender en Internet, pero el camimo eficiente
+                y eficaz es mediante Campañas Digitales en Google Ads y Redes Sociales (Facebook, Instagram, TripAdvisor, entre otros), ya que
+                en cuestión de minutos y con presupuestos razonables, los productos y/o servicios pueden estar a la venta en Internet."</p>
             </div>
           </div>
       </div>
     </section>
 
+    <section id="speakers" class="mt-4"> <!--mt= Margin top mb= Margin bottom -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-6 mb-4"> <!-- Con col-md-6 col-lg-4 asignamos 4 columnas, es decir 4 tarjetas pr linea, mb= margin bottom-->
+            <div class="card">
+              <iframe class="" width="" height="330px" class="card-img-top" src="https://www.youtube.com/embed/BrEGlJf5oAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">CSS</span>
+                  <span class="badge badge-info">HTML</span>
+                  <span class="badge badge-primary">Git</span>
+                </div>
+                <h5 class="card-title mb-0">Leonidas Esteban</h5>
+                <p class="card-text">Sed lacinia erat at neque egestas sagittis. Cras quis congue magna. Sed sollicitudin ultrices nulla, in convallis metus consequat eu.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 mb-4">
+            <div class="card">
 
+              <iframe class=""width="" height="330px" class="card-img-top" src="https://www.youtube.com/embed/vn2cqgtHVZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">CSS</span>
+                  <span class="badge badge-info">HTML</span>
+                  <span class="badge badge-primary">Git</span>
+                </div>
+                <h5 class="card-title mb-0">Leonidas Esteban</h5>
+                <p class="card-text">Sed lacinia erat at neque egestas sagittis. Cras quis congue magna. Sed sollicitudin ultrices nulla, in convallis metus consequat eu.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+      <!-- <div class="contenedor">
+        <article class="event">
+        <figure class="event-imageContainer">
+          <div class="flexible-video">
+            <iframe class="youtube-video"width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </figure>
+        <div class="event-details">
+          <h3 class="event-title">PlatziConf Mexico 2018</h3>
+          <p class="event-description">El evento mas granfde sobre gente que quiere aprender mas de internet. En este evento te comparto
+          como tener una vida de constante aprendizaje</p>
+          <a class="event-url"href="https://www.youtube.com/watch?v=RKqh_o3RXoY" target="_blank">Ver Platica</a>
+        </div>
+        </article>
+        <article class="event">
+        <figure class="event-imageContainer">
+          <div class="flexible-video">
+            <iframe class="youtube-video"width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </figure>
+        <div class="event-details">
+          <h3 class="event-title">PlatziConf Mexico 2018</h3>
+          <p class="event-description">El evento mas granfde sobre gente que quiere aprender mas de internet. En este evento te comparto
+          como tener una vida de constante aprendizaje</p>
+          <a class="event-url"href="https://www.youtube.com/watch?v=RKqh_o3RXoY" target="_blank">Ver Platica</a>
+        </div>
+        </article>
+      </div> -->
+    </section>
 
   <!-- header -->
   <!-- cerpo 1 -->
@@ -159,6 +295,31 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)'); /* Para que nuestra funcion solo funcione en pastallas dedsde esta dimencion*/
+      const menu= document.querySelector('.menu');
+      // console.log(menu);
+      const burgerButton= document.querySelector('#burger-menu');
+      // console.log(burgerButton);
+      ipad.addListener(validation)
+      function validation(event){
+        if(event.matches){
+          burgerButton.addEventListener('click', hideShow)
+        } else{
+          burgerButton.removeEventListener('click', hideShow)
+        }
+        // console.log(event.matches);
+        }
+        validation(ipad);
+      function hideShow() {
+        if(menu.classList.contains('is-active')){
+          menu.classList.remove('is-active');
+        } else {
+          menu.classList.add('is-active');
+        }
+      }
+
+    </script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
