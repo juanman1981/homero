@@ -1,9 +1,5 @@
-/* .nav-link{
-  color: white !important;
-} */
-/* .hamburger{
-  background-color: white !important;
-} */
+
+
 figure{
     margin: 0;
     }
@@ -16,18 +12,86 @@ figure{
   background-color: #000000;
   color: white;
 }
-/* .titulo{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  color: white;
-} */
-/* .leyenda{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 4em;
-  color: white;
-} */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8tuva1');
+  src:  url('fonts/icomoon.eot?8tuva1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8tuva1') format('truetype'),
+    url('fonts/icomoon.woff?8tuva1') format('woff'),
+    url('fonts/icomoon.svg?8tuva1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-decoration: none !important;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-whatsapp:before {
+  content: "\e904";
+  color: #77e879;
+  font-size: 2em;
+}
+.icon-linkedin:before {
+  content: "\e902";
+  /* color: #2773B0; */
+}
+.icon-facebook1:before {
+  content: "\e903";
+  /* color: #4267B2; */
+
+}
+.icon-youtube:before {
+  content: "\e900";
+  /* color: red; */
+}
+.icon-instagram:before {
+  content: "\e901";
+  /* color: #D84385; */
+}
+
+#salto {
+  position: relative;
+}
+  #salto .overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  #salto .overlay .container,
+  #salto .overlay .row {
+    height: 100%;
+  }
+  #footer{
+    background-color: #f8f9fa;
+  }
+  .puntos{
+    list-style-image: url("assets/images/logocv2.jpg");
+  }
 .letra{
 font-family: 'Open Sans', sans-serif;
+}
+.text-cv{
+  color: #007bff !important;
 }
 .letra h1{
 font-family: 'Open Sans', sans-serif;
@@ -40,7 +104,6 @@ margin-bottom: -10px;
   font-family: 'Open Sans', sans-serif;
   font-size: 4em;
   color: white;
-  /* font-family: 'Open Sans', sans-serif; */
 }
 .leyenda2{
   font-family: 'Open Sans', sans-serif;
@@ -54,77 +117,29 @@ margin-bottom: -10px;
   padding-right: 200px;
 }
 .imagen{
-  /* margin-left: -10px; */
+  margin-left: -10px;
 }
 
 
 .iconos{
   font-size: 30px;
-  /* padding-bottom: 50px !important; */
-  /* padding-left: -90px !important; */
 }
 .fondo{
   position: relative;
   background: #0f9bf6;
   border: 1px solid #054477;
-  /* position: relative;
-  display: grid;
-  align-items: center;
-  justify-content: center; */
   display: grid;
   grid-row: auto;
 }
 .card-text{
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 40px;
+  font-size: 22px;
   font-style: bold;
-}
-.event{
-  /* margin: 1%; */
-  /* width: 48%; */
-  /* flex-shrink: 0; */
-  /* border-radius: 10px; */
-  /* overflow: hidden; */
-  /* background-color: #f4fbff; */
-}
-.event-list{
-  /* display: flex;
-  flex-wrap: wrap; */
 }
 .event-list-title{
   margin-left: 20px;
 }
-.contenedor{
-  /* border: 1px solid red; */
-  /* max-width: 1000px; */
-  /* flex: 1; */
-  /* margin: 0 auto; */
-  /* display: inherit; */
-  /* align-items:inherit; */
-  /* justify-content: inherit; */
-  /* height: inherit; */
-  /* flex-wrap: inherit; */
-  }
-
-.flexible-video{
-  /* width: 100%; */
-  /* height: 0; */
-  /* padding-top:56.25%; */
-  /* background: blue; */
-  /* position: relative; */
-  }
-  .youtube-video{
-    /* width: 100%; */
-    /* height: auto; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0; */
-    /* right: 0; */
-    /* left: 0; */
-    /* width: 100%; */
-    /* height:100%; */
-  }
-  .event-details{
+.event-details{
     margin: 20px 40px;
     margin-top: -40px;
     background-color: white;
@@ -132,13 +147,17 @@ margin-bottom: -10px;
     padding: 20px;
     text-align: center;
   }
-  .event-description{
-    /* text-align: left; */
+  .btn-platzi{
+    background-color: #007bff;
+    color: white;
   }
-  .event-url{
-    /* color: #056fff; */
-    /* border: 1px solid; */
-    /* padding: 5px 20px; */
-    /* text-decoration: none; */
-    /* border-radius: 5px; */
+  .btn-platzi:hover{
+    background-color: #0065ff;
+    color: white;
+  }
+  .espaciado{
+    margin-bottom: auto;
+  }
+  .tamanitos{
+    font-size: 0.7em;
   }
