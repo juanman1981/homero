@@ -1,5 +1,3 @@
-
-
 figure{
     margin: 0;
     }
@@ -25,7 +23,6 @@ figure{
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -47,22 +44,16 @@ figure{
 }
 .icon-linkedin:before {
   content: "\e902";
-  /* color: #2773B0; */
 }
 .icon-facebook1:before {
   content: "\e903";
-  /* color: #4267B2; */
-
 }
 .icon-youtube:before {
   content: "\e900";
-  /* color: red; */
 }
 .icon-instagram:before {
   content: "\e901";
-  /* color: #D84385; */
 }
-
 #salto {
   position: relative;
 }
@@ -76,7 +67,6 @@ figure{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
   }
-
   #salto .overlay .container,
   #salto .overlay .row {
     height: 100%;
@@ -110,7 +100,6 @@ margin-bottom: -10px;
   font-size: 1em;
   color: white;
 }
-
 .descripcion{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -119,8 +108,6 @@ margin-bottom: -10px;
 .imagen{
   margin-left: -10px;
 }
-
-
 .iconos{
   font-size: 30px;
 }
